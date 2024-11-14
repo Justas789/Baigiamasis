@@ -1,0 +1,46 @@
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+preview = true
+select = ["ALL"]
+ignore = [
+    "E702",    # multiple-statements-on-one-line-semicolon
+    "COM819",  # prohibited-trailing-comma
+    "PD002",   # pandas-use-of-inplace-argument
+    "ERA001",  # commented-out-code
+    "COM812",  # missing-trailing-comma
+    "PLR2004", # magic-value-comparison
+    "EM101",   # raw-string-in-exception
+    "D401",    # non-imperative-mood
+    "S113",    # request-without-timeout
+    "S101",    # assert
+    "NPY002",  # numpy-legacy-random
+    "PTH123",  # builtin-open
+    "C408",    # unnecessary-collection-call
+    "INP001",  # implicit-namespace-package
+    "S311",    # suspicious-non-cryptographic-random-usage
+    "PERF401", # manual-list-comprehension
+    "D100",    # undocumented-public-module
+    "C408",    # unnecessary-collection-call
+    "INP001",  # implicit-namespace-package
+    "COM819",  # prohibited-trailing-comma
+    "UP015",   # redundant-open-modes
+    "FA102",   # future-required-type-annotation
+    "E402",    # module-import-not-at-top-of-file
+    "C405",    # unnecessary-literal-set
+    "EXE003",  # shebang-missing-python
+    "T203",    # p-print
+    "D104",    # undocumented-public-package
+    "C406",    # unnecessary-literal-dict
+    "EM102",   # f-string-in-exception
+    "EXE005",  # shebang-not-first-line
+    "FA100",   # future-rewritable-type-annotation
+    "ISC003",  # explicit-string-concatenation
+    "PLR1722", # sys-exit-alias
+    "D203",    # one-blank-line-before-class
+    "D213",    # multi-line-summary-second-line
+    "T201",    # print
+    "CPY001",  # Missing copyright notice at top of file
+]
